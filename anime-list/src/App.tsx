@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Homepage } from "./app/containers/HomePage";
 
 const AppContainer = styled.div`
   width: 100%;
@@ -9,7 +10,11 @@ const AppContainer = styled.div`
 `;
 
 function App() {
-  return <AppContainer className="App">Hello World</AppContainer>;
+  return (
+    <AppContainer className="App">
+      <Homepage />
+    </AppContainer>
+  );
 }
 
 export default App;
