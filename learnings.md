@@ -38,3 +38,9 @@ A slice is a reducer, action and selector of the state combined in it self. So e
 With -watch it will on every change of the gql query reexecute and generate the typescript interfaces again
 
 - "schema:generate-watch": "npx apollo codegen:generate --localSchemaFile=./src/app/graphql/graphql-schema.json --target=typescript --tagName=gql --watch"
+
+# Reselect
+
+A tool to grab parts of the redux state and make it available in containers to the react app
+
+- yarn add reselect redux-logger
