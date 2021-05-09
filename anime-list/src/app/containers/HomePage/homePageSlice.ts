@@ -1,7 +1,8 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { IHomePageState } from "./types";
 
-const initialState = {
-  animeList: [],
+const initialState: IHomePageState = {
+  animePage: null,
 };
 
 const HomePageSlice = createSlice({
