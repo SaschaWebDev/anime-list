@@ -18,9 +18,9 @@ export interface GetAnimePage_Page_media_title {
 export interface GetAnimePage_Page_media_coverImage {
   __typename: "MediaCoverImage";
   /**
-   * The cover image url of the media at medium size
+   * The cover image url of the media at its largest size. If this size isn't available, large will be provided instead.
    */
-  medium: string | null;
+  extraLarge: string | null;
 }
 
 export interface GetAnimePage_Page_media {
@@ -53,6 +53,6 @@ export interface GetAnimePage {
 }
 
 export interface GetAnimePageVariables {
-  oage: number;
+  page: number;
   perPage: number;
 }
