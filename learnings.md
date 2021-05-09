@@ -32,3 +32,9 @@ A slice is a reducer, action and selector of the state combined in it self. So e
 - To create slices of a container the reduxjs/toolkit function can be used
 - const HomePageSlice = createSlice()
 - slice names in their receiving object should be unique across the whole project
+
+# Graphql Interface automatic generation
+
+With -watch it will on every change of the gql query reexecute and generate the typescript interfaces again
+
+- "schema:generate-watch": "npx apollo codegen:generate --localSchemaFile=./src/app/graphql/graphql-schema.json --target=typescript --tagName=gql --watch"
