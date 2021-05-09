@@ -8,8 +8,12 @@ const initialState: IHomePageState = {
 const HomePageSlice = createSlice({
   name: "homePage",
   initialState,
-  reducers: {},
+  reducers: {
+    setAnimePage(state, action) {
+      state.animePage = action.payload;
+    },
+  },
 });
 
-export const {} = HomePageSlice.actions;
+export const { setAnimePage } = HomePageSlice.actions;
 export default HomePageSlice.reducer;
