@@ -21,4 +21,4 @@ class AnimeService {
   }
 }
 
-export default AnimeService;
+export default new AnimeService();
