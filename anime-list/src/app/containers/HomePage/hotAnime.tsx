@@ -13,15 +13,16 @@ const HotAnimeContainer = styled.div`
 `;
 
 const AnimeItemContainer = styled.div`
-  width: 12em;
-  height: 16em;
+  width: 17em;
+  height: 18em;
   display: flex;
   flex-direction: column;
+  align-items: center;
 `;
 
 const AnimeCover = styled.div`
   width: auto;
-  height: 10em;
+  height: 15em;
 
   img {
     width: auto;
@@ -30,10 +31,10 @@ const AnimeCover = styled.div`
 `;
 
 const AnimeTitle = styled.h6`
-  font-size: 19px;
+  font-size: 15px;
   margin-top: 8px;
   color: #000;
-  font-weight: 600;
+  font-weight: 500;
 `;
 
 const stateSelector = createSelector(makeSelectAnimePage, (animePage) => ({
@@ -46,7 +47,7 @@ export function HotAnime() {
   const isEmptyAnimePage =
     !animePage || !animePage.media || animePage.media.length === 0;
 
-  if (isEmptyAnimePage) return null;
+  if (isEmptyAnimePage) return <div>Loading...</div>;
 
   return (
     <HotAnimeContainer>
